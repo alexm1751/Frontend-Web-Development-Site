@@ -12,9 +12,7 @@
         </br>
         <strong>Responsibilities: </strong>
         </br>
-        
           ${obj.roles[i].roleResponsibilities}
-      
         `
         
       thisData.innerHTML += theData;
