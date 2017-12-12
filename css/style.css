@@ -1,0 +1,109 @@
+body{
+	background: url(../images/gplaypattern.png);
+	background-repeat: repeat;
+
+}
+#hamburger{
+  background:none;
+  position:fixed;
+  top:10px;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  border:0;
+    font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10;
+
+}
+#cross{
+  background:none;
+  position:fixed;
+  top:10px;
+  right:0;
+    font-size:1.4em;
+  font-weight:bold;
+   line-height:45px;
+  padding:5px 15px 0px 15px;
+  border:0;
+  cursor:pointer;
+  outline:none;
+  z-index:10;
+  display: none;
+}
+
+/*Mobile CSS*/
+  @media screen and (min-device-width: 300px) { 
+    nav {
+  background: #aaa;
+  display: none;
+
+
+}
+nav a {
+  padding: 1em;
+  display: block;
+
+
+}
+#hamburger{
+  padding: 1em;
+  background: #fff;
+  display: block;
+
+  background:none;
+  position:fixed;
+  top:10px;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  border:0;
+    font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10;
+
+}
+.show-menu {
+  display: block;
+  position:fixed;
+  width:100%;
+  top: 0;
+  height: 100%;
+}
+
+h1{
+	color: red;
+	text-align: center;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+/*Tablet CSS*/
+  @media  screen and (min-device-width: 600px) { 
+  	h1{
+  		color: blue;
+  		text-align: center;
+  	} 
+  }
+
+/*Desktop CSS*/
+  @media screen and (min-device-width: 1200px) {
+  	h1{
+  		color: green;
+  		text-align: center;
+  	}
+  }
+
+
+
+
+
+
+
+
+
