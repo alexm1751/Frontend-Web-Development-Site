@@ -1,7 +1,7 @@
 let jsonString = `
 { "roles": [
   { 
-    "roleTitle":"Apple Genius" ,
+    "roleTitle":"Apple Genius",
     "roleDurationDate":"November 2015 - Present",
     "roleDescription":"Genius at the Apple Highcross store in Leicester.",
     "roleResponsibilities":"<ul>Time Managemner</ul><ul>Time Managemner</ul><ul>Time Managemner</ul>"
