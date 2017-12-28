@@ -9,28 +9,56 @@
 <body>
   <header>
     <h1>Portfolio Site</h1>
-  <button id="hamburger"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+  <button id="hamburger"><i id="bars" class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
     <nav id="nav-menu">
-      <a href="#">About Me</a>
-      <a href="#">Roles &amp; Experience</a>
-      <a href="#">Education</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Contact Me</a>  
+      <a id="anchorpoint1" href="#anchorpoint1">About Me  <i class="fa fa-user" aria-hidden="true"></i></a>
+      <a id="anchorpoint2" href="#anchorpoint2">Roles &amp; Experience  <i class="fa fa-industry" aria-hidden="true"></i></a>
+      <a id="anchorpoint3" href="#anchorpoint3">Education  <i class="fa fa-university" aria-hidden="true"></i></a>
+      <a id="anchorpoint4" href="#anchorpoint4">portfolio  <i class="fa fa-code" aria-hidden="true"></i></a>
+      <a id="anchorpoint5" href="#anchorpoint5">Contact Me  <i class="fa fa-envelope-o" aria-hidden="true"></i></a>  
     </nav>
   </header>
 
   <main>
-  <section><h2>About Me</h2></section>
-  <article id="roles"></article>
-  <section><h2>Roles &amp; Experience</h2></section>
-  <article id="roles"></article>
-  <section><h2>Education</h2></section>
-  <article id="roles"></article>
-  <section><h2>Portfolio</h2></section>
-  <article id="roles"></article>
-  <section><h2>Contact Me</h2></section>
-  <article id="roles"></article>
-  <form></form>
+  <section id="about">
+    <h2>About Me</h2>
+      <img id="profile" class="circle" src="images/alex@2x.png">
+      <article id="details"></article>
+  </section>
+
+  <section id="roles">
+    <h2>Roles &amp; Experience</h2>
+    <article id="rolelist"></article>
+  </section>
+  
+  <section id="education">
+    <h2>Education</h2>
+    <article id="educationlist"></article>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <article id="portfoliolist"></article>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <article id="mail"></article>
+      <form action="mailto:alexi1751@icloud.com" method="post" enctype="text/plain">
+        Name:
+        <input type="text" name="name"><br>
+        E-mail:
+        <input type="text" name="mail"><br>
+        Subject:
+        <input type="text" name="mail"><br>
+        Comment:
+        <input type="text" name="comment" size="50"><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+      </form>
+  </section>
+  
+
   </main>
   <footer></footer>
   <script src="javascript/scripts.js"></script>

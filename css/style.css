@@ -4,7 +4,11 @@ body{
   width:100%;
   padding: 0;
   margin:0;
-
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.875em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 button{
   color:black;
@@ -28,13 +32,50 @@ button{
 }
 
 
-nav a{
+
+.fa-active{
   color: white;
 }
 
 /*Mobile CSS*/
   @media screen and (min-device-width: 300px) { 
+    #about{
+      width:100%;
+      margin: auto;
+      text-align: center;
+    }
+
+    #profile{
+      display: block;
+      margin:auto;
+      float: none;
+      text-align: center;
+      position: relative;
+               animation: fadein 2s;
+    }
+    @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+    .circle {
+    align-content: center;
+    width: 190px;
+    height: 190px;
+    border: 9px solid blue;
+    border-radius: 100px;
+    position: fixed;
+
+
+
+  }
+
+  .circle:hover {
+
+    border: 9px solid red;
+
+  }
     nav {
+  padding-top: 10px;
   opacity: 0;
   visibility: hidden;
   transform: translate3d(0, -100%, 0);
@@ -46,6 +87,21 @@ nav a{
   left: 0;
   z-index: 3;
   transition: opacity 700ms step-end, transform 700ms cubic-bezier(0.8, 0, 0.55, 0.94), visibility 700ms step-end, background-color 700ms cubic-bezier(0.8, 0, 0.55, 0.94);
+
+}
+nav a{
+  color: white;
+  font-size: 2.6em;
+  display: block;
+
+}
+
+nav a:hover{
+   -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: white;
+   border-bottom-color: white;
+   border-bottom-style: solid;
 
 }
 
@@ -80,8 +136,17 @@ nav a {
 }
 
 
+#roles{
+  min-height: 500px;
+}
 
+#education{
+  min-height: 500px
+}
 
+#portfolio{
+  min-height: 500px;
+}
 
 
 h1{
@@ -99,6 +164,22 @@ a {
   		color: blue;
   		text-align: center;
   	} 
+
+    nav a{
+  color: white;
+  font-size: 3.6em;
+  display: block;
+
+}
+
+nav a:hover{
+   -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: white;
+   border-bottom-color: white;
+   border-bottom-style: solid;
+
+}
   }
 
 /*Desktop CSS*/
