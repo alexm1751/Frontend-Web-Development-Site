@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Mason</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css"> <!-- Style Sheet link -->
 </head>
 <body>
   <header>
     <h2>Alex Mason</h2>
+    <!-- button is linked via JavaScript to change class via an event listener, it shows or hides the nav menu. It also changes the colour of the hamburger to white to show its active state. I have used cite here due to accessibility requirements and validation issues. -->
   <button id="hamburger" ><cite id="bars" class="fa fa-bars fa-2x" aria-hidden="true"></cite></button>
     <nav id="nav-menu">
       <a id="anchorpoint1" href="#anchorpoint1">About Me  <p class="fa fa-user" aria-hidden="true"></p></a>
@@ -20,6 +21,8 @@
   </header>
 
   <main>
+
+    <!-- Small Biography section with a photo, the image should be in a circle for mobile formats and a square for anything larger, all that requires is an appropriate  sized image to be uploaded to images and the css takes care of the rest. -->
   <section id="about">
     <h3>About Me</h3>
       <img id="profile" class="circle" src="images/alex@2x.png" alt="profile photo">
@@ -30,7 +33,7 @@
         <br><br>
 
       </article>
-              <hr>
+              <hr><!-- Horizontal line tag, gives the site some subtle structure and nicely segments areas off without requiring borders. These are dotted throughout -->
   </section>
 
   <section id="roles">
@@ -40,7 +43,7 @@
       <!--The idea here is to use JSON to import any new experiences into the HTML portfolio file-->
     </article>
   </section>
-  
+  <!-- Similar to roles and experience however here is an example of manually entering information instead of using a JSON with a preformatted JavaScript-->
   <section id="education">
     <h3>Education</h3>
     <article id="educationlist">
@@ -89,7 +92,7 @@
       <section class=block1>
         <a href="#">
           <h3 id="b1">Coding</h3>
-        <img class=coding src="images/code-1839406_1920.jpg" alt="coding example">
+        <img class=coding src="images/code-1839406_1920.jpg" alt="coding example"> <!-- alt tag used for accessibility -->
 
         </a>
       </section>
@@ -122,26 +125,32 @@
           <br>
           <br>
          <h3>Contact</h3>
-
-      <form action="mailto:alexi1751@icloud.com" method="post" enctype="text/plain">
-            <a href="mailto:alexi1751@icloud.com">Get in Touch via Email</a>
-      </form>
+         <!-- I could have had a longer form with Name inputs or a text area but I thought this cluttered the page and prefer the user to send their own email. Furthermore, this is my public email but if the site was being reused enter your own in the mailto function -->
+        <form action="mailto:alexi1751@icloud.com" method="post" enctype="text/plain">
+              <a href="mailto:alexi1751@icloud.com">Get in Touch via Email</a>
+        </form>
   </section>
   
 
   </main>
   <footer id=social>
     <h4>Check me out on Social Media</h4>
-      <!--These are link but I did not want to add my own social media at this point, these links can be added at a later date.-->
-      <a href="#" class="fa fa-github-square fa-3x" aria-hidden="true" ><p>git icon</p></a>
+      <!--These are a link but I did not want to add my own social media at this point, these links can be added later.-->
+      <a href="#" class="fa fa-github-square fa-3x" aria-hidden="true" ><p>git icon</p></a> <!-- These links pull in icons from fontawesome and I have hidden the display output to please accessibility validators -->
       <a href="#" class="fa fa-linkedin-square fa-3x" aria-hidden="true" ><p>linked-in icon</p></a>
       <a href="#" class="fa fa-twitter-square fa-3x" aria-hidden="true"  ><p>twitter icon</p></a>
       <a href="#" class="fa fa-facebook-square fa-3x" aria-hidden="true" ><p>facebook icon</p></a>
+
+      <!-- It’s not actually copyright just keeping away the misinformed. -->
       <p>&copy; Alex Mason 2017 | All rights reserved</p>
   </footer>
+    <!-- Here the main JavaScript is held for the drop-down transition and page scrolling -->
   <script src="javascript/scripts.js"></script>
-	<script src="javascript/data.js"></script>
-	<script src="javascript/parse-data.js"></script>
+	<!-- This JSON holds the data variable for parse-data.js to pull into the site. -->
+  <script src="javascript/data.js"></script>
+  <!-- This script file is responsible for reading the JSON and importing its content into readable format for the HTML -->
+  <script src="javascript/parse-data.js"></script>
+  <!-- This is an icon resource online which can be found here: http://fontawesome.io/get-started/ -->
   <script src="https://use.fontawesome.com/43758d672f.js"></script>
 
 </body>
