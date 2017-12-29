@@ -6,10 +6,6 @@
   let hamburger = document.getElementById("hamburger");
   let navMenu = document.getElementById("nav-menu");
   let colour = document.getElementById("bars");
-  let text1 = document.getElementById("b1")
-  let text2 = document.getElementById("b2")
-  let text3 = document.getElementById("b3")
-  let text4 = document.getElementById("b4")
   let toggle = false;
   hamburger.addEventListener("click", toggleMenu);
 
@@ -20,10 +16,6 @@
     if (navMenu.classList.contains('show-menu')) { // true: it's visible
       navMenu.classList.remove("show-menu"), // hide it
       colour.classList.remove("fa-active");
-      text1.classList.remove("hideblock1");
-      text2.classList.remove("hideblock2");
-      text3.classList.remove("hideblock3");
-      text4.classList.remove("hideblock4");
 
       toggle = false
     }
@@ -31,10 +23,7 @@
     else{
       navMenu.classList.add("show-menu"), // show it
       colour.classList.add("fa-active");
-      text1.classList.add("hideblock1");
-      text2.classList.add("hideblock2");
-      text3.classList.add("hideblock3");
-      text4.classList.add("hideblock4");
+
       toggle = true
     }
   }
@@ -54,10 +43,7 @@
     let contact  = d.getElementById('anchorpoint5');
     let navMenu = document.getElementById("nav-menu");
     let colour = document.getElementById("bars");
-    let text1 = document.getElementById("b1")
-    let text2 = document.getElementById("b2")
-    let text3 = document.getElementById("b3")
-    let text4 = document.getElementById("b4")
+
 
     //Anchors
     let anchor1      = d.getElementById('about');

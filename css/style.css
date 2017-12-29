@@ -18,6 +18,7 @@ header{
   background: rgba(174, 181, 193, 0.8);
   width:100%;
   color: black;
+  z-index: 9;
 }
 
 header h1{
@@ -51,7 +52,7 @@ button{
   font-size:1.4em;
   cursor:pointer;
   outline:none;
-  z-index:10;
+  z-index:11;
 }
 
 #roles h3{
@@ -96,30 +97,20 @@ button{
   position: relative;
 }
 
+
 .block1{ 
 float: left;
-height: 200px;
-width:50%;
+  height: 250px;
+width:100%;
 overflow: hidden;
 z-index: 1;
 }
 
-.hideblock1{
-  display: none;
-}
-.hideblock2{
-  display: none;
-}
-.hideblock3{
-  display: none;
-}
-.hideblock4{
-  display: none;
-}
 
 .block1:hover .coding{
-  width: 400px;
-  height: 300px;
+  width: 130%;
+  height: 115%;
+  filter: grayscale(100%) blur(3px);
 
 }
 
@@ -131,12 +122,12 @@ z-index: 1;
   margin: auto;
   width:50%;
   padding-top: 150px;
-
+  z-index: 1;
 }
 
 .coding{
   width:100%;
-  height: 200px;
+  height: 250px;
   z-index: 2;
   overflow: hidden;
   transition: all 2s ease;
@@ -145,8 +136,8 @@ z-index: 1;
 .block2{
 
 float: left;
-height: 200px;
-width:50%;
+  height: 250px;
+width:100%;
 transition: all 2s ease;
 overflow: hidden;
 
@@ -154,11 +145,12 @@ overflow: hidden;
 }
 
 .block2:hover .resp{
-  width: 400px;
-  height: 300px;
+  width: 130%;
+  height: 115%;
+  filter: grayscale(100%) blur(3px);
 }
 
-.block2 a h3{
+.block2 h3{
   position: absolute;
   color: white;
   text-decoration: underline;
@@ -166,29 +158,32 @@ overflow: hidden;
   margin: auto;
   width:50%;
   padding-top: 150px;
+  z-index: 1;
 
 }
 
 .resp{
   width:100%;
-  height: 200px;
-   z-index: 2;
+  height: 250px;
+   z-index: 1;
    overflow: hidden;
- transition: all 2s ease;
+  transition: all 2s ease;
+
 }
 .block3{ 
 float: left;
-height: 200px;
-width:50%;
+  height: 250px;
+width:100%;
 transition: all 2s ease;
 overflow: hidden;
-  z-index: 1;
+z-index: 1;
 
 }
 
 .block3:hover .apps{
-  width: 400px;
-  height: 300px;
+  width: 130%;
+  height: 115%;
+  filter: grayscale(100%) blur(3px);
 }
 
 .block3 h3{
@@ -204,7 +199,7 @@ overflow: hidden;
 
 .apps{
   width:100%;
-  height: 200px;
+  height: 250px;
    z-index: 2;
    overflow: hidden;
  transition: all 2s ease;
@@ -212,8 +207,8 @@ overflow: hidden;
 
 .block4{ 
 float: left;
-height: 200px;
-width:50%;
+  height: 250px;
+width:100%;
 transition: all 2s ease;
 overflow: hidden;
   z-index: 1;
@@ -221,8 +216,9 @@ overflow: hidden;
 }
 
 .block4:hover .proj{
-  width: 400px;
-  height: 300px;
+  width: 130%;
+  height: 115%;
+  filter: grayscale(100%) blur(3px);
 }
 
 .block4 h3{
@@ -238,11 +234,14 @@ overflow: hidden;
 
 .proj{
   width:100%;
-  height: 200px;
+  height: 250px;
    z-index: 2;
    overflow: hidden;
  transition: all 2s ease;
+
 }
+
+
 
     #roles h2{
       font-size: 25px;
@@ -282,7 +281,7 @@ overflow: hidden;
       text-align: center;
       position: relative;
       animation: fadein 1s;
-      z-index: -1;
+      z-index: 1;
     }
     @keyframes fadein {
     from { opacity: 0; }
@@ -295,7 +294,7 @@ overflow: hidden;
     border: 9px solid #42c2f4;
     border-radius: 100px;
     position: fixed;
-    z-index: 0;
+    z-index: 1;
 
 
   }
@@ -316,7 +315,7 @@ overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 10;
   transition: opacity 700ms step-end, transform 700ms cubic-bezier(0.8, 0, 0.55, 0.94), visibility 700ms step-end, background-color 700ms cubic-bezier(0.8, 0, 0.55, 0.94);
 
 }
@@ -343,6 +342,7 @@ nav a:hover{
   transition: opacity 700ms step-start, transform 700ms cubic-bezier(0.8, 0, 0.55, 0.94), visibility 700ms step-start, background-color 700ms cubic-bezier(0.8, 0, 0.55, 0.94);
   z-index: 3;
   position: fixed;
+  z-index: 10;
 
 }
 
@@ -417,12 +417,14 @@ nav a {
 #portfolio{
   padding-top: 60px;
   min-height: 500px;
+  padding-bottom: 650px;
 }
 
 #portfolio h2{
     font-family: 'Raleway', sans-serif;
   font-size: 25px;
   font-weight: 400;
+  padding-bottom: 40px;
 }
 
 #contact{
@@ -487,8 +489,66 @@ color: black;
   background: rgba(174, 181, 193, 0.3);
 }
 
+/*Tablet Portrait image Compensation------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 600px) and (orientation : portrait){
 
-/*Tablet CSS*/
+    .block1{ 
+float: left;
+  height: 250px;
+  width:50%;
+
+}
+
+.coding{
+  width:100%;
+  height: 250px;
+}
+
+.block2{
+
+float: left;
+height: 250px;
+width:50%;
+}
+
+.resp{
+  width:100%;
+  height: 250px;
+}
+
+.block3{ 
+float: left;
+  height: 250px;
+width:50%;
+}
+
+.apps{
+  width:100%;
+  height: 250px;
+
+}
+
+.block4{ 
+float: left;
+  height: 250px;
+width:50%;
+
+
+}
+
+.proj{
+  width:100%;
+  height: 250px;
+
+
+}
+#portfolio{
+
+  padding-bottom: 100px;
+}
+}
+
+/*Tablet CSS----------------------------------------------------------------------------------------------------------------------------------*/
   @media  screen and (min-width: 600px) and (orientation : landscape){ 
   	h1{
   		color: blue;
@@ -507,12 +567,15 @@ color: black;
   width: 50%;
     margin-left: 50%;
   top:70px;
+  position: fixed;
+  z-index: 10;
 }
 
     nav a{
   color: white;
   font-size: 2.5em;
   display: block;
+  z-index: a;
 
   }
 
@@ -530,13 +593,108 @@ nav a:hover{
      
       padding: 10px;
     }
-
+    #about{
+      width:100%;
+      top: 80px;
+      padding-top: 100px;
+    }
     #social a{
       color: white;
       font-size: 50px;
     }
+
+    #profile{
+      position: relative;
+      top:40px;
+      margin-top: 40px;
+      display: block;
+      margin:auto;
+      margin-left: 60px;
+      margin-right: 20px;
+      margin-bottom: 60px;
+      float: left;
+      position: relative;
+      z-index: 1;
+    }
+
+  .circle{
+    border-radius: 0;
+    float: left;
+    align-content: left;
+    z-index: 1;
+
+  }
+  #about p{
+    position: relative;
+
+    margin-left: 300px;
+    margin-bottom: 80px;
+    z-index: 1;
+  }
+  #about h2{
+
+  }
+  #adetails h4{
+    margin-top: 50px;
+    position: relative;
+  }
+
+  .block1{ 
+float: left;
+  height: 250px;
+  width:50%;
+
 }
-/*Desktop CSS*/
+
+.coding{
+  width:100%;
+  height: 250px;
+}
+
+.block2{
+
+float: left;
+height: 250px;
+width:50%;
+}
+
+.resp{
+  width:100%;
+  height: 250px;
+}
+
+.block3{ 
+float: left;
+  height: 250px;
+width:50%;
+}
+
+.apps{
+  width:100%;
+  height: 250px;
+
+}
+
+.block4{ 
+float: left;
+  height: 250px;
+width:50%;
+
+
+}
+
+.proj{
+  width:100%;
+  height: 250px;
+
+
+}
+#portfolio{
+
+  padding-bottom: 100px;
+}
+}
+/*Desktop CSS---------------------------------------------------------------------------------------------------------------------*/
   @media screen and (min-width: 1200px) {
   	h1{
   		color: green;
@@ -572,7 +730,81 @@ nav a:hover{
   display: inline-block;
   padding:9.5px;
   }
-  }
+    .block1{ 
+float: left;
+  height: 250px;
+  width:25%;
+
+}
+
+.coding{
+  width:100%;
+  height: 250px;
+}
+
+.block2{
+
+float: left;
+height: 250px;
+width:25%;
+}
+
+.resp{
+  width:100%;
+  height: 250px;
+}
+
+.block3{ 
+float: left;
+  height: 250px;
+  width:25%;
+}
+
+.apps{
+  width:100%;
+  height: 250px;
+
+}
+
+.block4{ 
+  float: left;
+  height: 250px;
+  width:25%;
+
+
+}
+
+.proj{
+  width:100%;
+  height: 250px;
+
+
+}
+.block1 h3{
+
+  width:25%;
+
+}
+.block2 h3{
+
+  width:25%;
+
+}
+.block3 h3{
+
+  width:25%;
+
+}
+.block4 h3{
+
+  width:25%;
+
+}
+#portfolio{
+
+  padding-bottom: 0px;
+}
+}
 
 
 
