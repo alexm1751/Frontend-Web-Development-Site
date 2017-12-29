@@ -65,15 +65,12 @@ button{
 /*Mobile CSS----------------------------------------------------------------------------------------*/
 
 
-  @media screen and (min-device-width: 300px) { 
+  @media screen and (min-width: 300px) { 
 
     #adetails{
 
       animation: fadein 2.5s ease-in  ;
     }
-    @keyframes fadein {
-    from { width: 0; }
-    to   { width: 100%; }
 }
 
     #rolelist{
@@ -93,9 +90,7 @@ button{
     to   { width: 100%; }
 }
 
-.portfoliolist{
-  position: relative;
-}
+
 
 .portfolio{
   position: relative;
@@ -263,7 +258,7 @@ overflow: hidden;
 
     #social a{
       color: white;
-      font-size: 100px;
+      font-size: 40px;
     }
 
     #about{
@@ -492,20 +487,34 @@ color: black;
   background: rgba(174, 181, 193, 0.3);
 }
 
-}
+
 /*Tablet CSS*/
-  @media  screen and (min-device-width: 600px) { 
+  @media  screen and (min-width: 600px) and (orientation : landscape){ 
   	h1{
   		color: blue;
   		text-align: center;
   	} 
+.show-menu{
+  top:70px;
+  width: 50%;
+  height: 100%;
+  margin-left: 50%;
+
+}
+    nav {
+
+  transform: translate3d(200%, 0, 0);
+  width: 50%;
+    margin-left: 50%;
+  top:70px;
+}
 
     nav a{
   color: white;
-  font-size: 3.6em;
+  font-size: 2.5em;
   display: block;
 
-}
+  }
 
 nav a:hover{
    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
@@ -515,7 +524,7 @@ nav a:hover{
    border-bottom-style: solid;
 
 }
-  }
+  
 
       #social{
      
@@ -526,13 +535,43 @@ nav a:hover{
       color: white;
       font-size: 50px;
     }
-
+}
 /*Desktop CSS*/
-  @media screen and (min-device-width: 1200px) {
+  @media screen and (min-width: 1200px) {
   	h1{
   		color: green;
   		text-align: center;
   	}
+
+    .show-menu{
+       text-align: center;
+  top:70px;
+  min-width: 1200px;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  display: inline-block;
+  padding-right: 10%;
+
+}
+    nav {
+      text-align: center;
+  display: inline-block;
+  transform: translate3d(0, -100%, 0);
+    min-width: 1200px;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  top:70px;
+}
+
+    nav a{
+  text-align: center;
+  color: white;
+  font-size: 1.8em;
+  display: inline-block;
+  padding:9.5px;
+  }
   }
 
 
