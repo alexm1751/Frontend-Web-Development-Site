@@ -16,7 +16,7 @@ This is the same for Web Icons from Font Awesome which is an open source icon re
 
 <http://fontawesome.io>
 
-**Side note** - *Git sometimes needs a refresh to pull everything in*
+**Side note** - *Git sometimes needs a refresh to pull everything in, or let all the images load*
 
 Really enjoyed this assignment, I honestly appreciate all the work and effort that goes in from both lecturers. Sorry for the last-minute submission and commits but you gave me the extra time so I studied the JavaScript scrolling method used within. 
 
@@ -26,3 +26,4 @@ Really enjoyed this assignment, I honestly appreciate all the work and effort th
 Regards
 
 Alex Mason
+P14152892
