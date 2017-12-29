@@ -6,9 +6,10 @@ body{
   margin:0;
   font-family: 'Raleway', sans-serif;
   font-size: 0.875em;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
+  
 }
 
 header{
@@ -72,7 +73,7 @@ button{
     }
     @keyframes fadein {
     from { width: 0; }
-    to   { wifth: 100%; }
+    to   { width: 100%; }
 }
 
     #rolelist{
@@ -81,10 +82,178 @@ button{
     }
     @keyframes fadein {
     from { width: 0; }
-    to   { wifth: 100%; }
+    to   { width: 100%; }
 }
+#educationlist{
+
+      animation: fadein 2.5s ease-in  ;
+    }
+    @keyframes fadein {
+    from { width: 0; }
+    to   { width: 100%; }
+}
+
+.portfoliolist{
+  position: relative;
+}
+
+.portfolio{
+  position: relative;
+}
+
+.block1{ 
+float: left;
+height: 200px;
+width:50%;
+overflow: hidden;
+z-index: 1;
+}
+
+.hideblock1{
+  display: none;
+}
+.hideblock2{
+  display: none;
+}
+.hideblock3{
+  display: none;
+}
+.hideblock4{
+  display: none;
+}
+
+.block1:hover .coding{
+  width: 400px;
+  height: 300px;
+
+}
+
+.block1 h3{
+  position: absolute;
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+  margin: auto;
+  width:50%;
+  padding-top: 150px;
+
+}
+
+.coding{
+  width:100%;
+  height: 200px;
+  z-index: 2;
+  overflow: hidden;
+  transition: all 2s ease;
+}
+
+.block2{
+
+float: left;
+height: 200px;
+width:50%;
+transition: all 2s ease;
+overflow: hidden;
+
+
+}
+
+.block2:hover .resp{
+  width: 400px;
+  height: 300px;
+}
+
+.block2 a h3{
+  position: absolute;
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+  margin: auto;
+  width:50%;
+  padding-top: 150px;
+
+}
+
+.resp{
+  width:100%;
+  height: 200px;
+   z-index: 2;
+   overflow: hidden;
+ transition: all 2s ease;
+}
+.block3{ 
+float: left;
+height: 200px;
+width:50%;
+transition: all 2s ease;
+overflow: hidden;
+  z-index: 1;
+
+}
+
+.block3:hover .apps{
+  width: 400px;
+  height: 300px;
+}
+
+.block3 h3{
+  position: absolute;
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+  margin: auto;
+  width:50%;
+  padding-top: 150px;
+  z-index: 1;
+}
+
+.apps{
+  width:100%;
+  height: 200px;
+   z-index: 2;
+   overflow: hidden;
+ transition: all 2s ease;
+}
+
+.block4{ 
+float: left;
+height: 200px;
+width:50%;
+transition: all 2s ease;
+overflow: hidden;
+  z-index: 1;
+
+}
+
+.block4:hover .proj{
+  width: 400px;
+  height: 300px;
+}
+
+.block4 h3{
+  position: absolute;
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+  margin: auto;
+  width:50%;
+  padding-top: 150px;
+  z-index: 1;
+}
+
+.proj{
+  width:100%;
+  height: 200px;
+   z-index: 2;
+   overflow: hidden;
+ transition: all 2s ease;
+}
+
     #roles h2{
       font-size: 25px;
+      font-family: 'Raleway', sans-serif;
+
+      font-weight: 400;
     }
 
     #social{
@@ -106,6 +275,9 @@ button{
 
     #about h2{
       font-size: 25px;
+        font-family: 'Raleway', sans-serif;
+    
+    font-weight: 400;
     }
 
     #profile{
@@ -128,7 +300,7 @@ button{
     border: 9px solid #42c2f4;
     border-radius: 100px;
     position: fixed;
-    z-index: -1;
+    z-index: 0;
 
 
   }
@@ -174,7 +346,8 @@ nav a:hover{
   visibility: visible;
   transform: translate3d(0, 0, 0);
   transition: opacity 700ms step-start, transform 700ms cubic-bezier(0.8, 0, 0.55, 0.94), visibility 700ms step-start, background-color 700ms cubic-bezier(0.8, 0, 0.55, 0.94);
-
+  z-index: 3;
+  position: fixed;
 
 }
 
@@ -188,13 +361,18 @@ nav a:hover{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 10;
   transition: opacity 700ms step-end, transform 700ms cubic-bezier(0.8, 0, 0.55, 0.94), visibility 700ms step-end, background-color 700ms cubic-bezier(0.8, 0, 0.55, 0.94);
 
+}
+
+.nav-menu a{
+  z-index: 10;
 }
 nav a {
   padding: 1em;
   display: block;
+  z-index: 11;
 
 
 }
@@ -227,6 +405,10 @@ nav a {
 }
 #education h2{
   padding-bottom: 30px;
+  font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+
+  font-weight: 400;
 }
 
 #educationlist{
@@ -242,21 +424,74 @@ nav a {
   min-height: 500px;
 }
 
+#portfolio h2{
+    font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#contact{
+  padding-top: 60px;
+  min-height: 500px;
+}
+
+#contact h2{
+    font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
 
 h1{
 	color: red;
 	text-align: center;
   color: #42c2f4;
+      font-family: 'Raleway', sans-serif;
+
+  font-weight: 400;
 }
 h2{
   text-align: center;
   color: #42c2f4;
+      font-family: 'Raleway', sans-serif;
 
+  font-weight: 400;
+
+}
+
+h3{
+      font-family: 'Raleway', sans-serif;
+
+  font-weight: 400;
+}
+
+h4{
+      font-family: 'Raleway', sans-serif;
+
+  font-weight: 400;
 }
 a {
   color: #000;
   text-decoration: none;
 }
+
+#contact form{
+
+padding-top: 50px;
+padding-bottom: 50px;
+margin: auto;
+width:75%;
+text-align: center;
+background: rgba(174, 181, 193, 0.8);
+
+color: black;
+}
+
+#contact form:hover {
+  color: black;
+  background: rgba(174, 181, 193, 0.3);
+}
+
 }
 /*Tablet CSS*/
   @media  screen and (min-device-width: 600px) { 
