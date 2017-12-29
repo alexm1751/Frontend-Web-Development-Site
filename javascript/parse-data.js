@@ -3,16 +3,18 @@
 
   let obj = JSON.parse(jsonString);
 
-  for (var i = 0; i <= 4; i++) {
+  for (var i = 0; i <= 2; i++) {
       let theData =  
-      `<h3>${obj.rolelist[i].roleTitle}</h3>
-        <strong>Date: </strong>${obj.rolelist[i].roleDurationDate}
-        </br>
-        <strong>Description: </strong>${obj.rolelist[i].roleDescription}
-        </br>
-        <strong>Responsibilities: </strong>
-        </br>
+      `<h4>${obj.rolelist[i].roleTitle}</h4>
+        <h4>Date: </h4>${obj.rolelist[i].roleDurationDate}
+        <br><br>
+        <h4>Description: </h4>${obj.rolelist[i].roleDescription}
+        <br><br>
+        <h4>Responsibilities: </h4>
+        <br>
           ${obj.rolelist[i].roleResponsibilities}
+          <br>
+          <hr>
         `
         
       thisData.innerHTML += theData;
